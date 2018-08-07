@@ -12,6 +12,7 @@ namespace HelloXamarin
 		public MainPage()
 		{
 			InitializeComponent();
+
 		}
 	}
 }

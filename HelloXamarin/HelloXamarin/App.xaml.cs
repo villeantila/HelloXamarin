@@ -11,7 +11,28 @@ namespace HelloXamarin
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
+            MainPage = new ContentPage
+            {
+                Content = new StackLayout
+                {
+                    VerticalOptions = LayoutOptions.Center,
+                    Children =
+                    {
+                        new Label
+                        {
+                            HorizontalTextAlignment = TextAlignment.Center,
+                            Text = "Arvaa luku -peli",
+                            TextColor = Color.Red
+                        },
+                        new Label
+                        {
+                            HorizontalTextAlignment = TextAlignment.Center,
+                            Text = "Versio 0.1",
+                            TextColor = Color.CadetBlue
+                        }
+                    }
+                }
+            };
 		}
 
 		protected override void OnStart ()
